@@ -1,0 +1,35 @@
+html,
+body {
+  height: 100%;
+}
+main {
+  text-align: center;
+}
+
+:root {
+  --text-color: #fff;
+  --bg-color: #000;
+  --logo-color: #00ff90;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --text-color: #000;
+    --bg-color: #fff;
+    --logo-color: #000;
+  }
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  color: var(--logo-color);
+  fill: var(--logo-color);
+  width: 150px;
+}
